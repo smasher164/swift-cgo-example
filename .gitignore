@@ -1,0 +1,13 @@
+# Ignore everything
+*
+# Whitelist subdirectories
+!*/
+
+# Whitelist the following extensions
+!makefile
+!*.go
+!*.h
+!*.m
+!*.swift
+!.gitignore
+!*.md

@@ -12,3 +12,8 @@ In this example we:
   * Generate a bridging header on the command line instead of Xcode.
   * Output a library containing Objective-C and Swift code.
   * Link that library using CGO.
+
+To test it out, run 
+```
+make; go run minimal.go
+```

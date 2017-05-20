@@ -1,1 +1,2 @@
-*makefile linguist-language=C++
+*makefile linguist-language=C
+*.h linguist-language=C

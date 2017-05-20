@@ -10,4 +10,5 @@
 !*.m
 !*.swift
 !.gitignore
+!.gitattributes
 !*.md

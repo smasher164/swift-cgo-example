@@ -15,5 +15,5 @@ In this example we:
 
 To test it out, run 
 ```
-make; go run minimal.go
+make && go run minimal.go
 ```

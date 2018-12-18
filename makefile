@@ -1,8 +1,8 @@
 all:
-	make swift; make objc; make lib
+	make swift && make objc && make lib && go build
 
 swift:
-	xcrun -sdk macosx10.12 swift -frontend -c -primary-file minimal.swift -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/ -module-name minimal -emit-module-path minimal.swiftmodule -emit-objc-header-path emittedheader.h -enable-testing -enable-objc-interop -parse-as-library -o minimalS.o
+	xcrun swiftc -frontend -c -primary-file minimal.swift -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/ -module-name minimal -emit-module-path minimal.swiftmodule -emit-objc-header-path emittedheader.h -parse-as-library -o minimalS.o
 
 objc:
 	xcrun clang minimal.m -o minimalC.o -c

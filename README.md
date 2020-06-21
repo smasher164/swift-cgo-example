@@ -1,4 +1,13 @@
 # swift-cgo-example
+
+Edit: There is an unoffcial, more convenient, way to call a swift function from C using `@_cdecl`. See https://forums.swift.org/t/best-way-to-call-a-swift-function-from-c/9829/2.
+
+> There’s no official way yet. Aside from name mangling, Swift functions use a different calling convention from C. Unofficially, if you’re willing to deal with more than the usual amount of code breakage and compiler bugs, there’s an unofficial attribute @_cdecl that does this:
+
+See https://github.com/smasher164/swift-cgo-example/issues/2#issuecomment-459900557 for an example.
+
+---
+
 This example demonstrates how to use CGO to call Swift code from Go.
 The path looks something like this:
 
